@@ -5,20 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body { margin:0; font-family: Arial; background:#f5f7fa; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
 
 /* NAVBAR */
-nav {
-  background:#0b5ed7;
-  padding:15px;
-  text-align:center;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0d47a1;
+    color: white;
 }
-nav a {
-  color:white;
-  margin:0 15px;
-  text-decoration:none;
-  font-weight:bold;
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
 }
+
+.navbar nav a:hover {
+    color: #00e676;
+}
+
+/* PAGE CONTENT */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0d47a1;
+}
+
 
 /* HERO */
 .hero {
