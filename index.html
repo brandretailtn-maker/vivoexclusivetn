@@ -1,169 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vivo Exclusive Stores TN</title>
-
-<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/3e/Vivo_logo_2019.svg">
+<title>Vivo Exclusive TN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f6fa;
+body { margin:0; font-family: Arial; background:#f5f7fa; }
+
+/* NAVBAR */
+nav {
+  background:#0b5ed7;
+  padding:15px;
+  text-align:center;
+}
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* HERO */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 70px 20px;
+  padding:60px 20px;
+  text-align:center;
+  background:linear-gradient(#0b5ed7,#0a58ca);
+  color:white;
 }
 
-.hero h1 { font-size: 28px; }
-
-/* BUTTON */
 .btn {
-    padding: 12px;
-    margin: 8px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
+  padding:12px 20px;
+  margin:10px;
+  border:none;
+  border-radius:6px;
+  background:#25d366;
+  color:white;
+  font-size:16px;
 }
-
-.call { background: #0d6efd; color: white; }
-.whatsapp { background: #25d366; color: white; }
 
 /* SECTION */
 section {
-    margin: 15px;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
+  margin:20px;
+  padding:20px;
+  background:white;
+  border-radius:10px;
+  text-align:center;
 }
 
-/* PRODUCTS */
-.products {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 12px;
-}
-
-.product {
-    text-align: center;
-}
-
-.product img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.product p {
-    font-weight: bold;
-}
-
-/* TRUST */
-.trust {
-    text-align: center;
-}
-
-/* FLOAT WHATSAPP */
-.float {
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    background: #25d366;
-    color: white;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 26px;
-    line-height: 55px;
+footer {
+  background:#0b5ed7;
+  color:white;
+  text-align:center;
+  padding:15px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<nav>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
 <div class="hero">
-    <h1>Vivo Exclusive Stores</h1>
-    <p>Tamil Nadu | Authorized Retail Partner</p>
-    <p>🔥 Latest Models | Best Offers</p>
+<h1>Vivo Exclusive Stores</h1>
+<p>Tamil Nadu | Authorized Retail Partner</p>
 
-    <button class="btn call" onclick="window.location.href='tel:+917824903031'">📞 Call</button>
-    <button class="btn whatsapp" onclick="window.open('https://wa.me/917824903031')">💬 WhatsApp</button>
+<button class="btn" onclick="window.open('https://wa.me/917824903031')">
+💬 Chat on WhatsApp
+</button>
 </div>
 
-<!-- LATEST PRODUCTS -->
 <section>
-<h2>🔥 Latest Vivo Mobiles</h2>
-
-<div class="products">
-
-<div class="product">
-<img src="https://fdn2.gsmarena.com/vv/bigpic/vivo-x100-pro.jpg">
-<p>Vivo X300</p>
-</div>
-
-<div class="product">
-<img src="https://fdn2.gsmarena.com/vv/bigpic/vivo-v29.jpg">
-<p>Vivo V70</p>
-</div>
-
-<div class="product">
-<img src="https://fdn2.gsmarena.com/vv/bigpic/vivo-y200.jpg">
-<p>Vivo Y200</p>
-</div>
-
-<div class="product">
-<img src="https://fdn2.gsmarena.com/vv/bigpic/vivo-t2.jpg">
-<p>Vivo T2</p>
-</div>
-
-</div>
+<h2>Latest Vivo Smartphones</h2>
+<p>Explore latest models with best offers and support</p>
 </section>
 
-<!-- WHY US -->
 <section>
 <h2>Why Choose Us</h2>
-<p class="trust">
+<p>
 ✅ Genuine Products <br>
 🏬 Authorized Store <br>
 🛠 Warranty Support <br>
-💰 Best Price Guarantee
+💰 Best Price
 </p>
 </section>
 
-<!-- TRUST -->
-<section>
-<h2>Customer Trust</h2>
-<p class="trust">⭐ 4.8 Rating | 👥 10,000+ Customers</p>
-</section>
-
-<!-- STORE -->
-<section>
-<h2>Find Store</h2>
-<div style="text-align:center;">
-<button class="btn" onclick="window.open('https://maps.google.com')">📍 Find Nearest Store</button>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section>
-<h2>Contact</h2>
-<p class="trust">
-📞 +91 78249 03031 <br>
-📧 support@vivoexclusivestorestncom.net
-</p>
-</section>
-
-<a href="https://wa.me/917824903031" class="float">💬</a>
+<footer>
+© Vivo Exclusive Stores TN
+</footer>
 
 </body>
 </html>
