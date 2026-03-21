@@ -4,8 +4,13 @@
 <title>Vivo Exclusive TN</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Segoe UI', sans-serif;
     background: #f4f7fb;
 }
@@ -40,7 +45,7 @@ body {
     color: #25D366;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -50,27 +55,22 @@ body {
 
 .hero h1 {
     font-size: 42px;
-    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 /* BUTTON */
 .btn {
+    display: inline-block;
+    margin-top: 15px;
     background: #25D366;
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #1ebe5d;
 }
 
 /* SECTION */
@@ -84,45 +84,64 @@ body {
     text-align: center;
 }
 
-/* PRODUCT CARD */
+/* PRODUCTS */
 .products {
     display: flex;
-    justify-content: center;
     gap: 30px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .card {
     width: 250px;
-    background: white;
-    border-radius: 12px;
     padding: 20px;
+    border-radius: 12px;
+    background: white;
     box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 }
 
 .card img {
     width: 100%;
 }
 
-.card h3 {
-    margin-top: 10px;
-}
-
 /* FOOTER */
 .footer {
-    text-align: center;
-    padding: 20px;
     background: #0b1f3a;
     color: white;
-    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar nav {
+        margin-top: 10px;
+    }
 }
 </style>
 </head>
+    
 
 <body>
     <div class="hero">
@@ -133,30 +152,31 @@ body {
 
 <div class="section">
     <h2>🔥 Latest Vivo Smartphones</h2>
-    <p>Explore latest models with best offers</p>
 
     <div class="products">
         <div class="card">
             <img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-1.jpg">
             <h3>Vivo X300</h3>
-            <p>Flagship Performance</p>
+            <p>Flagship Model</p>
         </div>
 
         <div class="card">
             <img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-v70-1.jpg">
             <h3>Vivo V70</h3>
-            <p>Camera Beast</p>
+            <p>Best Camera</p>
         </div>
     </div>
 </div>
 
 <div class="section">
     <h2>Why Choose Us</h2>
-    <p>✔ Genuine Products | ✔ Warranty Support | ✔ Best Price</p>
+    <p>✔ Genuine Products | ✔ Warranty | ✔ Best Price</p>
 </div>
 
 <div class="footer">
-    © 2026 Vivo Exclusive Stores TN
+    © 2026 Vivo Exclusive Stores
 </div>
+
+<a href="https://wa.me/917824903031" class="whatsapp-float">💬</a>
 </body>
 </html>
