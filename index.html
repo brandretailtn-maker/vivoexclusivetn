@@ -3,13 +3,11 @@
 <head>
 <title>Vivo Exclusive TN</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fb;
 }
 
 /* NAVBAR */
@@ -17,112 +15,148 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    background: #0d47a1;
+    padding: 15px 50px;
+    background: linear-gradient(90deg, #0b1f3a, #1a73e8);
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .navbar nav a {
     color: white;
     text-decoration: none;
     margin-left: 25px;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 .navbar nav a:hover {
-    color: #00e676;
+    color: #25D366;
 }
 
-/* PAGE CONTENT */
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-h1 {
-    color: #0d47a1;
-}
-
-
-/* HERO */
+/* HERO SECTION */
 .hero {
-  padding:60px 20px;
-  text-align:center;
-  background:linear-gradient(#0b5ed7,#0a58ca);
-  color:white;
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(120deg, #1a73e8, #0b1f3a);
+    color: white;
 }
 
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
 .btn {
-  padding:12px 20px;
-  margin:10px;
-  border:none;
-  border-radius:6px;
-  background:#25d366;
-  color:white;
-  font-size:16px;
+    background: #25D366;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1ebe5d;
 }
 
 /* SECTION */
-section {
-  margin:20px;
-  padding:20px;
-  background:white;
-  border-radius:10px;
-  text-align:center;
+.section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
-footer {
-  background:#0b5ed7;
-  color:white;
-  text-align:center;
-  padding:15px;
+/* PRODUCT CARD */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b1f3a;
+    color: white;
+    margin-top: 40px;
 }
 </style>
 </head>
 
 <body>
-
-<header>
-    <div class="navbar">
-        <h2 class="logo">Vivo Stores</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
-
-<div class="hero">
-<h1>Vivo Exclusive Stores</h1>
-<p>Tamil Nadu | Authorized Retail Partner</p>
-
-<button class="btn" onclick="window.open('https://wa.me/917824903031')">
-💬 Chat on WhatsApp
-</button>
+    <div class="hero">
+    <h1>Vivo Exclusive Stores</h1>
+    <p>Tamil Nadu | Authorized Retail Partner</p>
+    <a class="btn" href="#">Chat on WhatsApp</a>
 </div>
 
-<section>
-<h2>Latest Vivo Smartphones</h2>
-<p>Explore latest models with best offers and support</p>
-</section>
+<div class="section">
+    <h2>🔥 Latest Vivo Smartphones</h2>
+    <p>Explore latest models with best offers</p>
 
-<section>
-<h2>Why Choose Us</h2>
-<p>
-✅ Genuine Products <br>
-🏬 Authorized Store <br>
-🛠 Warranty Support <br>
-💰 Best Price
-</p>
-</section>
+    <div class="products">
+        <div class="card">
+            <img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-x100-1.jpg">
+            <h3>Vivo X300</h3>
+            <p>Flagship Performance</p>
+        </div>
 
-<footer>
-© Vivo Exclusive Stores TN
-</footer>
+        <div class="card">
+            <img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-v70-1.jpg">
+            <h3>Vivo V70</h3>
+            <p>Camera Beast</p>
+        </div>
+    </div>
+</div>
 
+<div class="section">
+    <h2>Why Choose Us</h2>
+    <p>✔ Genuine Products | ✔ Warranty Support | ✔ Best Price</p>
+</div>
+
+<div class="footer">
+    © 2026 Vivo Exclusive Stores TN
+</div>
 </body>
 </html>
