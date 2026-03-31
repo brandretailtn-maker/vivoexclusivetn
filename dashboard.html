@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Store Dashboard</h2>
+
+<div id="data"></div>
+
+<script>
+const storeData = JSON.parse(localStorage.getItem("storeData"));
+
+if (!storeData) {
+  window.location.href = "login.html";
+}
+
+const ignoreFields = ["StoreID", "Password"];
+
+let html = "";
+
+for (let key in storeData) {
+  if (ignoreFields.includes(key)) continue;
+
+  html += `
+    <p><b>${key}</b>: ${storeData[key]}</p>
+  `;
+}
+
+document.getElementById("data").innerHTML = html;
+</script>
+
+</body>
+</html>
