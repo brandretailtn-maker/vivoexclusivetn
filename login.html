@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store Login</title>
+</head>
+<body>
+
+<h2>Store Login</h2>
+
+<input type="text" id="storeId" placeholder="Store ID"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="error" style="color:red;"></p>
+
+<script>
+const API_URL = "PASTE_YOUR_SCRIPT_URL_HERE";
+
+function login() {
+  const id = document.getElementById("storeId").value;
+  const password = document.getElementById("password").value;
+
+  fetch(`${API_URL}?id=${id}&password=${password}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.status === "success") {
+        localStorage.setItem("storeData", JSON.stringify(data.data));
+        window.location.href = "dashboard.html";
+      } else {
+        document.getElementById("error").innerText = data.message;
+      }
+    });
+}
+</script>
+
+</body>
+</html>
